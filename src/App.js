@@ -3,13 +3,7 @@ import "./App.css";
 
 function App() {
   const d = new Date();
-  const [hours, setHour] = useState(d.getHours());
-  const [mins, setMins] = useState(d.getMinutes());
-  const [secs, setSecs] = useState(d.getSeconds());
-  const [date, setDate] = useState(d.getDate());
-  const [month, setMonth] = useState(d.getMonth());
-  const [year, setYear] = useState(d.getFullYear());
-  const [day, setDay] = useState(d.getDay());
+
   const [time, setTime] = useState(Date.now());
 
   const week = [

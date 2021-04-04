@@ -15,7 +15,7 @@ body {
   height: 325px;
   border: 5px solid #1abc9c;
   box-shadow: 0 0 50px rgba(0, 240, 240, 0.3),
-    0 0 px rgba(0, 240, 240, 0.3) inset;
+    0 0 20px rgba(0, 240, 240, 0.3) inset;
   width: 325px;
   color: #fff;
   border-radius: 50%;
@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* animation: pulsate 1s infinite; */
+  animation: pulsate 1s infinite;
 }
 .time {
   font-size: 50px;
@@ -47,13 +47,19 @@ body {
 
 @keyframes pulsate {
   0% {
-    border: 3px solid red;
+    box-shadow: 0 0 0px rgba(0, 240, 240, 0.3),
+      0 0 0px rgba(0, 240, 240, 0.3) inset;
+    width: 325px;
   }
-  25% {
-    border: 3px solid blue;
+  50% {
+    box-shadow: 0 0 50px rgba(0, 240, 240, 0.3),
+      0 0 20px rgba(0, 240, 240, 0.3) inset;
+    width: 325px;
   }
-  75% {
-    border: 3px solid green;
+  100% {
+    box-shadow: 0 0 50px rgba(0, 240, 240, 0.3),
+      0 0 20px rgba(0, 240, 240, 0.3) inset;
+    width: 325px;
   }
 }
 @keyframes blink {
